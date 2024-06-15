@@ -43,15 +43,14 @@ public class UserController {
 
         Map<Object, Object> all = userDao.findAll();
         Collection<Object> values = all.values();
-        List<User> collect = values.stream().map(value -> (User) value).collect(Collectors.toList());
-        return collect;
+        return values.stream().map(value -> (User) value).collect(Collectors.toList());
 
     }
 
     //delete  user
     @DeleteMapping("/{userId}")
-    public void deleteUser(@PathVariable String userId) {
-        userDao.delete(userId);
+    public String deleteUser(@PathVariable String userId) {
+        userDao.delete(userId); return String.format("User with userId: %s, is Succesfully Deleted",userId);
     }
 
 }

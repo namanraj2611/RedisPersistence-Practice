@@ -2,6 +2,7 @@ package com.naman.redis.practice.Redis.Practice.models;
 
 import lombok.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 @Setter
@@ -11,12 +12,10 @@ import java.io.Serializable;
 @ToString
 public class User implements Serializable {
 
-    private static final long serialVersionUID = 6529685098267757694L;
-
-
+    @Serial
+    private static final long serialVersionUID = -5860399943409455301L;
     private String userId;
     private String name;
     private String phone;
     private String email;
-
 }
