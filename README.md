@@ -1,8 +1,13 @@
 ### This is a Practice Project created for understanding Spring Boot + Redis = Spring Data Redis, performing Basic CRUD Operations, Provides faster read and writes.
 
+
+
 - In this project, I used redis as a Persistent Database.
 - Redis can also be used as Cache Memory/In-Memory, for faster read and writes.(Check another Repository, used Redis as CacheMemory also)
 - Redis can also be used as Pub/Sub Messageing and Data Replication, in form of Master-Slave Architecture.
+
+![redis](https://github.com/namanraj2611/RedisPersistence-Practice/assets/52111704/ff01e99d-b33b-4834-ace6-2f1dcd488bfd)
+
 
 ## ** NOTE: Initial request always takes more response time as compared to incremental request for the same type of request. As initialy, request will reach to the DB and stored into cache. As all the request will be sent to RedisCache first, if it's already present in the RedisCache, it will be returned in less time, alse it will go to DB and fetch it.**
 **Example-** For a specific userId (ab9ba07a-542d-494d-81f1-b3993fef7010), we will send an initial request and after that we will one more and see the difference between the response time of consecutive requests.
