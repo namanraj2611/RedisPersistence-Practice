@@ -21,8 +21,7 @@ public class UserController {
 
     // create user
     @PostMapping
-    public User createUser(@RequestBody User user
-    ) {
+    public User createUser(@RequestBody User user) {
 
         user.setUserId(UUID.randomUUID().toString());
         return userDao.save(user);
@@ -32,8 +31,8 @@ public class UserController {
 
     //get single user
 
-    @GetMapping("/{userId}")
-    public User getUser(@PathVariable("userId") String userId) {
+    @GetMapping("/{enterHereTheUserId}")
+    public User getUser(@PathVariable("enterHereTheUserId") String userId) {
         return userDao.get(userId);
     }
 
@@ -48,9 +47,10 @@ public class UserController {
     }
 
     //delete  user
-    @DeleteMapping("/{userId}")
-    public String deleteUser(@PathVariable String userId) {
-        userDao.delete(userId); return String.format("User with userId: %s, is Succesfully Deleted",userId);
+    @DeleteMapping("/{enterHereTheUserId}")
+    public String deleteUser(@PathVariable("enterHereTheUserId") String userId) {
+        userDao.delete(userId);
+        return String.format("User with userId: %s, is Succesfully Deleted", userId);
     }
 
 }

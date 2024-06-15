@@ -5,11 +5,9 @@ import lombok.*;
 import java.io.Serial;
 import java.io.Serializable;
 
-@Setter
-@Getter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 public class User implements Serializable {
 
     @Serial
