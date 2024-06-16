@@ -1,4 +1,4 @@
-### This is a Practice Project created for understanding Spring Boot + Redis = Spring Data Redis, performing Basic CRUD Operations, Provides faster read and writes.
+### This is a Project created for understanding Spring Boot + Redis = Spring Data Redis, performing Basic CRUD Operations, Provides faster read and writes.
 
 
 
