@@ -82,6 +82,11 @@ Store the fetched data in Redis for future use.
 
   ![image](https://github.com/namanraj2611/RedisPersistence-Practice/assets/52111704/0df8bf81-3c16-4143-b9a8-15a8c370a90c)
 
-  
+
+# **Pre-Requisites:**
+1. Install Redis in your System: https://github.com/tporadowski/redis/releases
+   - Download the .msi.
+   - After downloading, install the redis by keeping everything default.
+   - Go into C:Drive > Program Files > "Redis" Folder > Copy the path > Save the copied path inside the "Path" under Environment Variable of your System > Now open the "redis-server" & "redis-cli" inside the "Redis" Folder > then only run the Application.
 
 

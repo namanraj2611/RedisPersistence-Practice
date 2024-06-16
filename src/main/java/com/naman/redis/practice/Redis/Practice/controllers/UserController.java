@@ -22,11 +22,8 @@ public class UserController {
     // create user
     @PostMapping
     public User createUser(@RequestBody User user) {
-
         user.setUserId(UUID.randomUUID().toString());
         return userDao.save(user);
-
-
     }
 
     //get single user
